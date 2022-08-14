@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'popping', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 70px;
+	background: #252839;
+}
+#d1{
+	margin-left: -30px;
+	margin-top: 100px;
+	width: 100%;
+	height: 400px;
+	border:5px solid red;
+	padding: 50px;
+	border-radius: 20px;
+}
+h2{
+	margin-left: 10px;
+	position: relative;
+	font-size: 80px;
+	color:  #252839;
+	-webkit-text-stroke:0.3vw #383d52;
+	text-transform: uppercase;
+}
+h2::before{
+
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 80%;
+color: orange;
+-webkit-text-stroke:0.3vw orange;
+border-right: 2px solid #252839;
+overflow: hidden;
+animation: animate 6s linear ;
+}
+@keyframes animate
+{
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width: 100%;
+	}
+}
+
+
+h3{
+	margin-left: 10px;
+	position: relative;
+	font-size: 80px;
+	color:  #252839;
+	-webkit-text-stroke:0.3vw #383d52;
+	text-transform: uppercase;
+}
+h3::before{
+
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 80%;
+color: #fff;
+-webkit-text-stroke:0.3vw #fff;
+border-right: 2px solid #252839;
+overflow: hidden;
+animation: animate 6s linear;
+animation-delay: 2s;
+}
+@keyframes animate
+{
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	50%,90%
+	{
+		width: 100%;
+	}
+}
+
+h1{
+	margin-left: 10px;
+	position: relative;
+	font-size: 80px;
+	color:  #252839;
+	-webkit-text-stroke:0.3vw #383d52;
+	text-transform: uppercase;
+}
+h1::before{
+
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 80%;
+color: green;
+-webkit-text-stroke:0.3vw green;
+border-right: 2px solid #252839;
+overflow: hidden;
+animation: animate 6s linear ;
+  animation-delay: 6s;
+}
+@keyframes animate
+{
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width: 100%;
+	}
+}
+#d2
+  {
+    p
+    {
+      position: border-bottom: ;;
+    }
+  }
+
+	</style>
+</head>
+<body>
+
+<a href="/wish.html">
+  <div id="d1">
+	<h2 data-text="happy">happy</h2>
+	<h3 data-text="independence">independence</h3>
+	<h1 data-text="day">day</h1>
+</div></a>
+
+</body>
+</html>
